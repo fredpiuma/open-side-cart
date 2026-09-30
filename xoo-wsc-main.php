@@ -54,6 +54,4 @@ if ( !function_exists('xoo_wsc_init') ) {
 		return Xoo_Wsc_Loader::get_instance();
 	}
 
-}else{
-	deactivate_plugins('side-cart-woocommerce/xoo-wsc-main.php');
 }

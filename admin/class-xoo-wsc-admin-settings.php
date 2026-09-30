@@ -17,11 +17,6 @@ class Xoo_Wsc_Admin_Settings{
 
 		$this->hooks();
 
-		if( xoo_wsc_helper()->admin->is_settings_page() ){
-			xoo_wsc_helper()->license->adminff = xoo_wsc_helper()->admin;
-			xoo_wsc_helper()->license->add_license_tab();
-		}
-
 	}
 
 	public function hooks(){
@@ -34,7 +29,7 @@ class Xoo_Wsc_Admin_Settings{
 		add_action( 'xoo_tab_page_start', array( $this, 'info_tab_html' ), 10, 2 );
 		add_filter( 'plugin_action_links_' . XOO_WSC_PLUGIN_BASENAME, array( $this, 'plugin_action_links' ) );
 
-		if( xoo_wsc_helper()->admin->is_settings_page() && xoo_wsc_helper()->license->init_plugin() ){
+		if( xoo_wsc_helper()->admin->is_settings_page() ){
 
 			add_action( 'xoo_as_enqueue_scripts', array( $this, 'enqueue_custom_scripts' ) );
 
@@ -187,7 +182,7 @@ class Xoo_Wsc_Admin_Settings{
 
 
 	public function preview_info($tab_id){
-		if( !xoo_wsc_helper()->admin->is_settings_page() || $tab_id === 'pro' || $tab_id === 'info' || $tab_id === 'license' || $tab_id === 'rewards' ) return;
+		if( !xoo_wsc_helper()->admin->is_settings_page() || $tab_id === 'pro' || $tab_id === 'info' || $tab_id === 'rewards' ) return;
 		?>
 		<div class="xoo-as-preview-info"><span class="dashicons dashicons-laptop"></span> Updates live in customizer</div>
 		<?php
@@ -211,7 +206,7 @@ class Xoo_Wsc_Admin_Settings{
 		wp_enqueue_script('jquery-ui-sortable');
 
 		wp_enqueue_style( 'xoo-wsc-magic', XOO_WSC_URL.'/library/magic/dist/magic.min.css', array(), '1.0' );
-		wp_enqueue_script( 'masonry-js', 'https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js', array(), XOO_WSC_VERSION, array( 'strategy' => 'defer', 'in_footer' => true ) );
+		wp_enqueue_script( 'masonry-js', XOO_WSC_URL.'/library/masonry/masonry.js', array(), XOO_WSC_VERSION, array( 'strategy' => 'defer', 'in_footer' => true ) );
 	
 
 
@@ -356,10 +351,6 @@ class Xoo_Wsc_Admin_Settings{
 			'menu_title' 	=> 'Side Cart',
 			'icon' 			=> 'dashicons-cart',
 		);
-
-		if( !xoo_wsc_helper()->license->is_license_active() ){
-			$args['callback'] = array( xoo_wsc_helper()->license, 'license_form' );
-		}
 
 		xoo_wsc_helper()->admin->register_menu_page( $args );
 

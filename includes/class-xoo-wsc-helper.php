@@ -6,8 +6,6 @@ class Xoo_Wsc_Helper extends Xoo_Helper{
 
 	protected static $_instance = null;
 
-	public $license;
-
 	public static function get_instance( $slug, $path, $helperArgs = array() ){
 		if ( is_null( self::$_instance ) ) {
 			self::$_instance = new self( $slug, $path, $helperArgs );
@@ -17,7 +15,6 @@ class Xoo_Wsc_Helper extends Xoo_Helper{
 
 	public function __construct(...$args){
 		parent::__construct(...$args);
-		$this->include_license();
 	}
 
 
@@ -75,11 +72,6 @@ class Xoo_Wsc_Helper extends Xoo_Helper{
 		
 
 		return $string;
-	}
-
-	public function include_license(){
-		require_once XOO_WSC_PATH.'/license/class-xoo-license-helper.php';
-		$this->license = new Xoo_License_Helper( 'side-cart-woocommerce', XOO_WSC_PLUGIN_FILE );
 	}
 
 	public function get_default_button_themes(){

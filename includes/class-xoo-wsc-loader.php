@@ -42,28 +42,20 @@ class Xoo_Wsc_Loader{
 		require_once XOO_WSC_PATH.'/includes/xoo-framework/xoo-framework.php';
 		require_once XOO_WSC_PATH.'/includes/class-xoo-wsc-helper.php';
 
+		require_once XOO_WSC_PATH.'/includes/xoo-wsc-functions.php';
+		require_once XOO_WSC_PATH.'/includes/class-xoo-wsc-template-args.php';
+
+		if( $this->is_request( 'frontend' ) ){
+			require_once XOO_WSC_PATH.'/includes/class-xoo-wsc-frontend.php';
+		}
+
 		if( $this->is_request( 'admin' ) ) {
 			require_once XOO_WSC_PATH.'/admin/class-xoo-wsc-admin-settings.php';
 		}
 
-		if( xoo_wsc_helper()->license->init_plugin() ){
+		require_once XOO_WSC_PATH.'/includes/class-xoo-wsc-bars.php';
 
-			require_once XOO_WSC_PATH.'/includes/xoo-wsc-functions.php';
-			require_once XOO_WSC_PATH.'/includes/class-xoo-wsc-template-args.php';
-
-			if( $this->is_request( 'frontend' ) ){
-				require_once XOO_WSC_PATH.'/includes/class-xoo-wsc-frontend.php';
-			}
-			
-			if( $this->is_request( 'admin' ) ) {
-				require_once XOO_WSC_PATH.'/admin/class-xoo-wsc-admin-settings.php';
-			}
-
-			require_once XOO_WSC_PATH.'/includes/class-xoo-wsc-bars.php';
-
-			require_once XOO_WSC_PATH.'/includes/class-xoo-wsc-cart.php';
-
-		}
+		require_once XOO_WSC_PATH.'/includes/class-xoo-wsc-cart.php';
 
 	}
 

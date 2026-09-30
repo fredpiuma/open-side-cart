@@ -1661,7 +1661,7 @@ span.xoo-wsc-psavlabel {
 }
 
 
-.xoo-as-container[data-active_tab="info"] .xoo-sc-bottom-btns, .xoo-as-container[data-active_tab="license"] .xoo-sc-bottom-btns {
+.xoo-as-container[data-active_tab="info"] .xoo-sc-bottom-btns {
     display: none;
 }
 
