@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 — 2026-09-30
+
+- Make the quick view "Update" button text translatable.
+- Update author URI.
+
 ## 1.0.0 — 2026-09-30
 
 - First release of the Open Side Cart fork, based on Woocommerce Side Cart Premium 4.9.1.

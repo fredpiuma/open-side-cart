@@ -169,7 +169,7 @@ class OSC_Cart{
 
 
 	public function quickview_set_atc_text(){
-		return 'Update';
+		return __( 'Update', 'open-side-cart' );
 	}
 
 
