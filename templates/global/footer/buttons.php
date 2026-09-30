@@ -2,13 +2,13 @@
 /**
  * Footer Buttons
  *
- * This template can be overridden by copying it to yourtheme/templates/side-cart-woocommerce/global/footer/buttons.php.
+ * This template can be overridden by copying it to yourtheme/templates/open-side-cart/global/footer/buttons.php.
  *
  * HOWEVER, on occasion we will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
  * maintain compatibility. We try to do this as little as possible, but it does
  * happen.
- * @see     https://docs.xootix.com/side-cart-woocommerce/
+ * @see     https://github.com/fredericomdecastro/open-side-cart
  * @version 4.0
  */
 
@@ -18,19 +18,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
-extract( Xoo_Wsc_Template_Args::footer_buttons() );
+extract( OSC_Template_Args::footer_buttons() );
 
-do_action( 'xoo_wsc_before_footer_btns' );
+do_action( 'osc_before_footer_btns' );
 
 $buttonHTML = '<a href="%1$s" class="%2$s" %4$s>%3$s</a>';
 
 ?>
-<div class="xoo-wsc-ft-buttons-cont">
+<div class="osc-ft-buttons-cont">
 
 	<?php foreach ( $buttons as $key => $button_data ){
 
 		if( !$button_data['label'] ) continue;
-		$button_data['class'][] = 'xoo-wsc-ft-btn-'.$key;
+		$button_data['class'][] = 'osc-ft-btn-'.$key;
 
 		printf(
 			$buttonHTML,
@@ -44,8 +44,8 @@ $buttonHTML = '<a href="%1$s" class="%2$s" %4$s>%3$s</a>';
 
 </div>
 
-<?php do_action( 'xoo_wsc_after_footer_btns' ); ?>
+<?php do_action( 'osc_after_footer_btns' ); ?>
 
-<div class="xoo-wsc-payment-btns">
-	<?php do_action( 'xoo_wsc_payment_buttons' ); ?>
+<div class="osc-payment-btns">
+	<?php do_action( 'osc_payment_buttons' ); ?>
 </div>

@@ -2,13 +2,13 @@
 /**
  * Quantity Input
  *
- * This template can be overridden by copying it to yourtheme/templates/side-cart-woocommerce/global/body/qty-input.php.
+ * This template can be overridden by copying it to yourtheme/templates/open-side-cart/global/body/qty-input.php.
  *
  * HOWEVER, on occasion we will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
  * maintain compatibility. We try to do this as little as possible, but it does
  * happen.
- * @see     https://docs.xootix.com/side-cart-woocommerce/
+ * @see     https://github.com/fredericomdecastro/open-side-cart
  * @version 4.0
  */
 
@@ -19,11 +19,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 
-<div class="xoo-wsc-qty-box xoo-wsc-qtb-<?php echo $qtyDesign ?>">
+<div class="osc-qty-box osc-qtb-<?php echo $qtyDesign ?>">
 
-	<?php do_action( 'xoo_wsc_before_quantity_input_field' ); ?>
+	<?php do_action( 'osc_before_quantity_input_field' ); ?>
 
-	<span class="xoo-wsc-minus xoo-wsc-chng">-</span>
+	<span class="osc-minus osc-chng">-</span>
 
 	<input
 		type="number"
@@ -35,8 +35,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 		placeholder="<?php echo esc_attr( $placeholder ); ?>"
 		inputmode="<?php echo esc_attr( $inputmode ); ?>" />
 
-	<?php do_action( 'xoo_wsc_after_quantity_input_field' ); ?>
+	<?php do_action( 'osc_after_quantity_input_field' ); ?>
 
-	<span class="xoo-wsc-plus xoo-wsc-chng">+</span>
+	<span class="osc-plus osc-chng">+</span>
 
 </div>

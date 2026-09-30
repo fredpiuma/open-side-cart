@@ -142,4 +142,4 @@ $rewards = array(
 	
 );
 
-return apply_filters( 'xoo_wsc_admin_settings', $rewards, 'rewards' );
+return apply_filters( 'osc_admin_settings', $rewards, 'rewards' );

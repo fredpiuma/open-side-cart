@@ -7,7 +7,7 @@ $settings = array(
 		'title' 		=> '',
 		'id' 			=> 'scm-btnthemes',
 		'section_id' 	=> 'sc_button_theme_creator',
-		'default' 		=> xoo_wsc_helper()->get_default_button_themes()
+		'default' 		=> osc_helper()->get_default_button_themes()
 	),
 
 	array(
@@ -238,23 +238,23 @@ $settings = array(
 		'section_id' 	=> 'sc_basket',
 		'args' 			=> array(
 			'options' 	=> array(
-				'xoo-wsc-icon-basket1' 		=> 'xoo-wsc-icon-basket1',
-				'xoo-wsc-icon-basket2' 		=> 'xoo-wsc-icon-basket2',
-				'xoo-wsc-icon-basket3'		=> 'xoo-wsc-icon-basket3',
-				'xoo-wsc-icon-basket4' 		=> 'xoo-wsc-icon-basket4',
-				'xoo-wsc-icon-basket5' 		=> 'xoo-wsc-icon-basket5',
-				'xoo-wsc-icon-basket6' 		=> 'xoo-wsc-icon-basket6',
-				'xoo-wsc-icon-cart1' 		=> 'xoo-wsc-icon-cart1',
-				'xoo-wsc-icon-cart2' 		=> 'xoo-wsc-icon-cart2',
-				'xoo-wsc-icon-bag1' 		=> 'xoo-wsc-icon-bag1',
-				'xoo-wsc-icon-bag2' 		=> 'xoo-wsc-icon-bag2',
-				'xoo-wsc-icon-shopping-bag1'=> 'xoo-wsc-icon-shopping-bag1',
+				'osc-icon-basket1' 		=> 'osc-icon-basket1',
+				'osc-icon-basket2' 		=> 'osc-icon-basket2',
+				'osc-icon-basket3'		=> 'osc-icon-basket3',
+				'osc-icon-basket4' 		=> 'osc-icon-basket4',
+				'osc-icon-basket5' 		=> 'osc-icon-basket5',
+				'osc-icon-basket6' 		=> 'osc-icon-basket6',
+				'osc-icon-cart1' 		=> 'osc-icon-cart1',
+				'osc-icon-cart2' 		=> 'osc-icon-cart2',
+				'osc-icon-bag1' 		=> 'osc-icon-bag1',
+				'osc-icon-bag2' 		=> 'osc-icon-bag2',
+				'osc-icon-shopping-bag1'=> 'osc-icon-shopping-bag1',
 			),
 			'has_asset' 	=> true,
 			'asset_type' 	=> 'icon',
 			'upload' 		=> 'yes'
 		),
-		'default' 	=> 'xoo-wsc-icon-shopping-bag1'
+		'default' 	=> 'osc-icon-shopping-bag1'
 	),
 
 	array(
@@ -324,7 +324,7 @@ $settings = array(
 		'id' 			=> 'sck-basket-sh',
 		'section_id' 	=> 'sc_basket',
 		'default' 		=> '0px 0px 15px 2px #0000001a',
-		'desc' 			=> xoo_wsc_helper()->box_shadow_desc('0px 0px 15px 2px #0000001a')
+		'desc' 			=> osc_helper()->box_shadow_desc('0px 0px 15px 2px #0000001a')
 	),
 
 	array(
@@ -395,21 +395,21 @@ $settings = array(
 		'section_id' 	=> 'sc_head',
 		'args' 			=> array(
 			'options' 	=> array(
-				'xoo-wsc-icon-cross' => 'xoo-wsc-icon-cross',
-				'xoo-wsc-icon-arrow-long-right' => 'xoo-wsc-icon-arrow-long-right',
-				'xoo-wsc-icon-arrow-thin-right' => 'xoo-wsc-icon-arrow-thin-right',
-				'xoo-wsc-icon-del4' => 'xoo-wsc-icon-del4',
-				'xoo-wsc-icon-del1' => 'xoo-wsc-icon-del1',
-				'xoo-wsc-icon-del2' => 'xoo-wsc-icon-del2',
-				'xoo-wsc-icon-del3' => 'xoo-wsc-icon-del3',
-				'xoo-wsc-icon-arrow-left' => 'xoo-wsc-icon-arrow-left',
-				'xoo-wsc-icon-arrow-thin-left' => 'xoo-wsc-icon-arrow-thin-left',
+				'osc-icon-cross' => 'osc-icon-cross',
+				'osc-icon-arrow-long-right' => 'osc-icon-arrow-long-right',
+				'osc-icon-arrow-thin-right' => 'osc-icon-arrow-thin-right',
+				'osc-icon-del4' => 'osc-icon-del4',
+				'osc-icon-del1' => 'osc-icon-del1',
+				'osc-icon-del2' => 'osc-icon-del2',
+				'osc-icon-del3' => 'osc-icon-del3',
+				'osc-icon-arrow-left' => 'osc-icon-arrow-left',
+				'osc-icon-arrow-thin-left' => 'osc-icon-arrow-thin-left',
 			),
 			'has_asset' 	=> true,
 			'asset_type' 	=> 'icon',
 			'upload' 		=> 'yes'
 		),
-		'default' 	=> 'xoo-wsc-icon-cross',
+		'default' 	=> 'osc-icon-cross',
 	),
 
 	array(
@@ -528,19 +528,19 @@ $settings = array(
 		'section_id' 	=> 'sc_body',
 		'args' 			=> array(
 			'options' 	=> array(
-				'xoo-wsc-icon-trash' 	=> 'xoo-wsc-icon-trash',
-				'xoo-wsc-icon-trash1' 	=> 'xoo-wsc-icon-trash1',
-				'xoo-wsc-icon-trash2' 	=> 'xoo-wsc-icon-trash2',
-				'xoo-wsc-icon-cross' 	=> 'xoo-wsc-icon-cross',
-				'xoo-wsc-icon-del1'  	=> 'xoo-wsc-icon-del1',
-				'xoo-wsc-icon-del2'  	=> 'xoo-wsc-icon-del2',
-				'xoo-wsc-icon-del3'  	=> 'xoo-wsc-icon-del3',
-				'xoo-wsc-icon-del4'  	=> 'xoo-wsc-icon-del4',
+				'osc-icon-trash' 	=> 'osc-icon-trash',
+				'osc-icon-trash1' 	=> 'osc-icon-trash1',
+				'osc-icon-trash2' 	=> 'osc-icon-trash2',
+				'osc-icon-cross' 	=> 'osc-icon-cross',
+				'osc-icon-del1'  	=> 'osc-icon-del1',
+				'osc-icon-del2'  	=> 'osc-icon-del2',
+				'osc-icon-del3'  	=> 'osc-icon-del3',
+				'osc-icon-del4'  	=> 'osc-icon-del4',
 			),
 			'has_asset'  => true,
 			'asset_type' => 'icon'
 		),
-		'default' 	=> 'xoo-wsc-icon-trash'
+		'default' 	=> 'osc-icon-trash'
 	),
 
 	array(
@@ -657,7 +657,7 @@ $settings = array(
 		'id' 			=> 'scbp-shadow',
 		'section_id' 	=> 'scb_product',
 		'default' 		=> '0 2px 2px #00000005',
-		'desc' 			=> xoo_wsc_helper()->box_shadow_desc('0 2px 2px #00000005')
+		'desc' 			=> osc_helper()->box_shadow_desc('0 2px 2px #00000005')
 	),
 
 	array(
@@ -905,7 +905,7 @@ $settings = array(
 		'id' 			=> 'scbp-card-shadow',
 		'section_id' 	=> 'scb_productcard',
 		'default' 		=> '0px 10px 15px -12px #0000001a',
-		'desc' 			=> xoo_wsc_helper()->box_shadow_desc('0px 10px 15px -12px #0000001a')
+		'desc' 			=> osc_helper()->box_shadow_desc('0px 10px 15px -12px #0000001a')
 	),
 
 
@@ -1092,7 +1092,7 @@ $settings = array(
 		'id' 			=> 'scf-shadow',
 		'section_id' 	=> 'sc_footer',
 		'default' 		=> '11px 4px 10px #0000001a',
-		'desc' 			=> xoo_wsc_helper()->box_shadow_desc('11px 4px 10px #0000001a')
+		'desc' 			=> osc_helper()->box_shadow_desc('11px 4px 10px #0000001a')
 	),
 
 
@@ -1117,21 +1117,21 @@ $settings = array(
 		'section_id' 	=> 'sc_footer',
 		'args' 			=> array(
 			'options' 	=> array(
-				'xoo-wsc-icon-coupon' 			=> 'xoo-wsc-icon-coupon',
-				'xoo-wsc-icon-coupon-1' 		=> 'xoo-wsc-icon-coupon-1',
-				'xoo-wsc-icon-coupon-2' 		=> 'xoo-wsc-icon-coupon-2',
-				'xoo-wsc-icon-coupon-3' 		=> 'xoo-wsc-icon-coupon-3',
-				'xoo-wsc-icon-coupon-4' 		=> 'xoo-wsc-icon-coupon-4',
-				'xoo-wsc-icon-coupon-5' 		=> 'xoo-wsc-icon-coupon-5',
-				'xoo-wsc-icon-coupon-6' 		=> 'xoo-wsc-icon-coupon-6',
-				'xoo-wsc-icon-coupon-7' 		=> 'xoo-wsc-icon-coupon-7',
-				'xoo-wsc-icon-coupon-8' 		=> 'xoo-wsc-icon-coupon-8',
+				'osc-icon-coupon' 			=> 'osc-icon-coupon',
+				'osc-icon-coupon-1' 		=> 'osc-icon-coupon-1',
+				'osc-icon-coupon-2' 		=> 'osc-icon-coupon-2',
+				'osc-icon-coupon-3' 		=> 'osc-icon-coupon-3',
+				'osc-icon-coupon-4' 		=> 'osc-icon-coupon-4',
+				'osc-icon-coupon-5' 		=> 'osc-icon-coupon-5',
+				'osc-icon-coupon-6' 		=> 'osc-icon-coupon-6',
+				'osc-icon-coupon-7' 		=> 'osc-icon-coupon-7',
+				'osc-icon-coupon-8' 		=> 'osc-icon-coupon-8',
 			),
 			'has_asset' 	=> true,
 			'asset_type' 	=> 'icon',
 			'upload' 		=> 'yes'
 		),
-		'default' 	=> 'xoo-wsc-icon-coupon-8'
+		'default' 	=> 'osc-icon-coupon-8'
 	),
 
 	array(
@@ -1194,19 +1194,19 @@ $settings = array(
 		'section_id' 	=> 'sc_footer',
 		'args' 			=> array(
 			'toggleSettings' => array(
-				'xoo-wsc-sy-options[scf-btn-padding]' 		=> array( 'yes' ),
-				'xoo-wsc-sy-options[scf-btn-border]' 		=> array( 'yes' ),
-				'xoo-wsc-sy-options[scf-btn-bgcolor]' 		=> array( 'yes' ),
-				'xoo-wsc-sy-options[scf-btn-txtcolor]' 		=> array( 'yes' ),
-				'xoo-wsc-sy-options[scf-btnhv-border]' 		=> array( 'yes' ),
-				'xoo-wsc-sy-options[scf-btnhv-bgcolor]' 	=> array( 'yes' ),
-				'xoo-wsc-sy-options[scf-btnhv-txtcolor]' 	=> array( 'yes' ),
-				'xoo-wsc-sy-options[scf-btns-theme]' 		=> array( 'yes' ),
-				'xoo-wsc-sy-options[scf-btn-main]' 			=> array( 'unchecked' ),
-				'xoo-wsc-sy-options[scm-btntheme-cart]' 	=> array( 'unchecked' ),
-				'xoo-wsc-sy-options[scm-btntheme-checkout]' => array( 'unchecked' ),
-				'xoo-wsc-sy-options[scm-btntheme-continue]' => array( 'unchecked' ),
-				'xoo-wsc-sy-options[scm-btntheme-empty]' 	=> array( 'unchecked' ),
+				'osc-sy-options[scf-btn-padding]' 		=> array( 'yes' ),
+				'osc-sy-options[scf-btn-border]' 		=> array( 'yes' ),
+				'osc-sy-options[scf-btn-bgcolor]' 		=> array( 'yes' ),
+				'osc-sy-options[scf-btn-txtcolor]' 		=> array( 'yes' ),
+				'osc-sy-options[scf-btnhv-border]' 		=> array( 'yes' ),
+				'osc-sy-options[scf-btnhv-bgcolor]' 	=> array( 'yes' ),
+				'osc-sy-options[scf-btnhv-txtcolor]' 	=> array( 'yes' ),
+				'osc-sy-options[scf-btns-theme]' 		=> array( 'yes' ),
+				'osc-sy-options[scf-btn-main]' 			=> array( 'unchecked' ),
+				'osc-sy-options[scm-btntheme-cart]' 	=> array( 'unchecked' ),
+				'osc-sy-options[scm-btntheme-checkout]' => array( 'unchecked' ),
+				'osc-sy-options[scm-btntheme-continue]' => array( 'unchecked' ),
+				'osc-sy-options[scm-btntheme-empty]' 	=> array( 'unchecked' ),
 			)
 		),
 		'default' 	=> 'yes',
@@ -1345,7 +1345,7 @@ $settings = array(
 				'column' 	=> 'Column'
 			),
 			'toggleSettings' => array(
-				'xoo-wsc-sy-options[scsp-col-items]' => array( 'wide' ),
+				'osc-sy-options[scsp-col-items]' => array( 'wide' ),
 			)
 		),
 		'default' 	=> 'wide',
@@ -1439,17 +1439,17 @@ $settings = array(
 		'section_id' 	=> 'saved_for_later',
 		'args' 			=> array(
 			'options' 	=> array(
-				'xoo-wsc-icon-heart1' 			=> 'xoo-wsc-icon-heart1',
-				'xoo-wsc-icon-heart'  			=> 'xoo-wsc-icon-heart',
-				'xoo-wsc-icon-bookmark-o' 		=> 'xoo-wsc-icon-bookmark-o',
-				'xoo-wsc-icon-bookmark1' 		=> 'xoo-wsc-icon-bookmark1',
-				'xoo-wsc-icon-cloud-download' 	=> 'xoo-wsc-icon-cloud-download',
-				'xoo-wsc-icon-download3'  		=> 'xoo-wsc-icon-download3',
+				'osc-icon-heart1' 			=> 'osc-icon-heart1',
+				'osc-icon-heart'  			=> 'osc-icon-heart',
+				'osc-icon-bookmark-o' 		=> 'osc-icon-bookmark-o',
+				'osc-icon-bookmark1' 		=> 'osc-icon-bookmark1',
+				'osc-icon-cloud-download' 	=> 'osc-icon-cloud-download',
+				'osc-icon-download3'  		=> 'osc-icon-download3',
 			),
 			'has_asset'  => true,
 			'asset_type' => 'icon'
 		),
-		'default' 	=> 'xoo-wsc-icon-heart1'
+		'default' 	=> 'osc-icon-heart1'
 	),
 
 
@@ -1464,7 +1464,7 @@ $settings = array(
 				'column' 	=> 'Column'
 			),
 			'toggleSettings' => array(
-				'xoo-wsc-sy-options[sl-col-items]' => array( 'wide' ),
+				'osc-sy-options[sl-col-items]' => array( 'wide' ),
 			)
 		),
 		'default' 	=> 'wide'
@@ -1575,5 +1575,5 @@ $settings = array(
 
 );
 
-return apply_filters( 'xoo_wsc_admin_settings', $settings, 'style' );
+return apply_filters( 'osc_admin_settings', $settings, 'style' );
 ?>

@@ -47,12 +47,12 @@ $settings = array(
 		'id' 			=> 'm-trigger-class',
 		'section_id' 	=> 'av_main',
 		'default' 		=> "",
-		'desc' 			=> 'You can use class xoo-wsc-cart-trigger to open side cart or add your own class here',
+		'desc' 			=> 'You can use class osc-cart-trigger to open side cart or add your own class here',
 	),
 
 );
 
 
-return apply_filters( 'xoo_wsc_admin_settings', $settings, 'advanced' );
+return apply_filters( 'osc_admin_settings', $settings, 'advanced' );
 
 ?>

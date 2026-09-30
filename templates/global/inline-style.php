@@ -124,13 +124,13 @@ if( $buttonRows === 'three' ){
 }
 elseif ( $buttonRows === 'two_one' ) {
 	$gridCols = '2fr 2fr';
-	echo 'a.xoo-wsc-ft-btn:nth-child(3){
+	echo 'a.osc-ft-btn:nth-child(3){
 		grid-column: 1/-1;
 	}';
 }
 elseif ( $buttonRows === 'one_two' ) {
 	$gridCols = '2fr 2fr';
-	echo 'a.xoo-wsc-ft-btn:nth-child(1){
+	echo 'a.osc-ft-btn:nth-child(1){
 		grid-column: 1/-1;
 	}';
 }
@@ -140,38 +140,38 @@ else{
 
 
 $buttonThemeSelectorMap = array(
-	'scm-btntheme-empty' 	=> '.xoo-wsc-empty-cart a.xoo-wsc-btn',
-	'scm-btntheme-sp' 		=> 'span.xoo-wsc-sp-atc a.button',
-	'scm-btntheme-coupon' 	=> '.xoo-wsc-sl-content.xoo-wsc-sl-coupon .xoo-wsc-btn',
-	'scm-btntheme-ship' 	=> '.xoo-wsc-slider button[name="calc_shipping"]',
-	'scm-btntheme-save' 	=> '.xoo-wsc-savl-atc',
+	'scm-btntheme-empty' 	=> '.osc-empty-cart a.osc-btn',
+	'scm-btntheme-sp' 		=> 'span.osc-sp-atc a.button',
+	'scm-btntheme-coupon' 	=> '.osc-sl-content.osc-sl-coupon .osc-btn',
+	'scm-btntheme-ship' 	=> '.osc-slider button[name="calc_shipping"]',
+	'scm-btntheme-save' 	=> '.osc-savl-atc',
 );
 
 if( $new_btn_layout ){
 	$buttonThemeSelectorMap = array_merge( $buttonThemeSelectorMap, array(
-		'scm-btntheme-cart'     => 'a.xoo-wsc-ft-btn.xoo-wsc-ft-btn-cart',
-		'scm-btntheme-checkout' => 'a.xoo-wsc-ft-btn.xoo-wsc-ft-btn-checkout',
-		'scm-btntheme-continue' => 'a.xoo-wsc-ft-btn.xoo-wsc-ft-btn-continue',
+		'scm-btntheme-cart'     => 'a.osc-ft-btn.osc-ft-btn-cart',
+		'scm-btntheme-checkout' => 'a.osc-ft-btn.osc-ft-btn-checkout',
+		'scm-btntheme-continue' => 'a.osc-ft-btn.osc-ft-btn-continue',
 	) );
 }
 
 $buttonThemes = $sy['scm-btnthemes'];
 
-xoo_wsc_helper()->print_button_themed_css( $buttonThemeSelectorMap, $sy, $buttonThemes );
+osc_helper()->print_button_themed_css( $buttonThemeSelectorMap, $sy, $buttonThemes );
 
 $bannerThemeSelectorMap = array(
-	'scm-btntheme-tooltip'  => '.xoo-wsc-tooltip',
-	'scm-btntheme-gift'  	=> '.xoo-wsc-gift-ban',
+	'scm-btntheme-tooltip'  => '.osc-tooltip',
+	'scm-btntheme-gift'  	=> '.osc-gift-ban',
 );
 
-xoo_wsc_helper()->print_button_themed_css( $bannerThemeSelectorMap, $sy, $buttonThemes, false );
+osc_helper()->print_button_themed_css( $bannerThemeSelectorMap, $sy, $buttonThemes, false );
 
 if( isset( $buttonThemes[ $sy['scm-btntheme-checkout'] ] ) ){
 	$checkoutButtonTheme = $buttonThemes[ $sy['scm-btntheme-checkout'] ];
-	echo 'a.xoo-wsc-ft-btn.xoo-wsc-ft-btn-checkout .amount{
+	echo 'a.osc-ft-btn.osc-ft-btn-checkout .amount{
 		color: '.$checkoutButtonTheme['txtColor'].';
 	}';
-	echo 'a.xoo-wsc-ft-btn.xoo-wsc-ft-btn-checkout:hover .amount{
+	echo 'a.osc-ft-btn.osc-ft-btn-checkout:hover .amount{
 		color: '.$checkoutButtonTheme['hover']['txtColor'].';
 	}';
 }
@@ -192,24 +192,24 @@ if( !$new_btn_layout ){
 
 	if( $buttonTheme === 'custom' ) :?>
 
-		.xoo-wsc-ft-buttons-cont a.xoo-wsc-ft-btn, .xoo-wsc-container .xoo-wsc-btn {
+		.osc-ft-buttons-cont a.osc-ft-btn, .osc-container .osc-btn {
 			background-color: <?php echo $buttonbgColor ?>;
 			color: <?php echo $buttontxtColor ?>;
 			border: <?php echo $buttonBorder ?>;
 			padding: <?php echo $buttonPadding ?>;
 		}
 
-		.xoo-wsc-ft-buttons-cont a.xoo-wsc-ft-btn:hover, .xoo-wsc-container .xoo-wsc-btn:hover {
+		.osc-ft-buttons-cont a.osc-ft-btn:hover, .osc-container .osc-btn:hover {
 			background-color: <?php echo $HVbuttonbgColor ?>;
 			color: <?php echo $HVbuttontxtColor ?>;
 			border: <?php echo $HVbuttonBorder ?>;
 		}
 
-		.xoo-wsc-btn .amount{
+		.osc-btn .amount{
 			color: <?php echo $buttontxtColor ?>
 		}
 
-		.xoo-wsc-btn:hover .amount{
+		.osc-btn:hover .amount{
 			color: <?php echo $HVbuttontxtColor ?>;
 		}
 
@@ -222,36 +222,36 @@ if( !$new_btn_layout ){
 
 ?>
 
-.xoo-wsc-sp-left-col img, .xoo-wsc-sp-left-col{
+.osc-sp-left-col img, .osc-sp-left-col{
 	max-width: <?php echo $spImgWidth ?>px;
 }
 
-.xoo-wsc-sp-right-col{
+.osc-sp-right-col{
 	font-size: <?php echo $spFontSize ?>px;
 }
 
-.xoo-wsc-sp-container, .xoo-wsc-dr-sp{
+.osc-sp-container, .osc-dr-sp{
 	background-color: <?php echo $spBGColor ?>;
 }
 
 
 
-.xoo-wsc-footer{
+.osc-footer{
 	background-color: <?php echo $ftrBgColor ?>;
 	color: <?php echo $ftrTxtColor ?>;
 	padding: <?php echo $ftrPadding ?>;
 	box-shadow: <?php echo $ftrShadow ?>;
 }
 
-.xoo-wsc-footer, .xoo-wsc-footer a, .xoo-wsc-footer .amount{
+.osc-footer, .osc-footer a, .osc-footer .amount{
 	font-size: <?php echo $ftrFsize ?>px;
 }
 
-.xoo-wsc-ft-buttons-cont{
+.osc-ft-buttons-cont{
 	grid-template-columns: <?php echo $gridCols ?>;
 }
 
-.xoo-wsc-basket{
+.osc-basket{
 	<?php echo $basketPosition ?>: <?php echo $basketOffset ?>px;
 	<?php echo $openFrom ?>: <?php echo $basketHOffset ?>px;
 	background-color: <?php echo $basketBG ?>;
@@ -266,28 +266,28 @@ if( !$new_btn_layout ){
 <?php if( $BasketMobile !== 'yes' ): ?>
 
 @media only screen and (max-width: 600px) {
-	.xoo-wsc-basket, .xoo-wsc-basket[style*='block']  {
+	.osc-basket, .osc-basket[style*='block']  {
 		display: none!important;
 	}
 }
 
 <?php endif; ?>
 
-.xoo-wsc-bki{
+.osc-bki{
 	font-size: <?php echo $basketIconSize.'px' ?>
 }
 
-.xoo-wsc-items-count{
+.osc-items-count{
 	<?php echo $countPosition === 'top_right' || $countPosition === 'top_left' ? 'top' : 'bottom' ?>: -10px;
 	<?php echo $countPosition === 'top_right' || $countPosition === 'bottom_right' ? 'right' : 'left' ?>: -10px;
 }
 
-.xoo-wsc-items-count, .xoo-wsch-items-count, .xoo-wsch-save-count{
+.osc-items-count, .osch-items-count, .osch-save-count{
 	background-color: <?php echo $countBG ?>;
 	color: <?php echo $countColor ?>;
 }
 
-.xoo-wsc-container, .xoo-wsc-slider, .xoo-wsc-drawer{
+.osc-container, .osc-slider, .osc-drawer{
 	max-width: <?php echo $cartWidth ?>px;
 	<?php echo $openFrom ?>: <?php echo -$cartWidth ?>px;
 	<?php echo $cartheight === 'full' ? 'top: 0;bottom: 0' : 'max-height: 100vh' ?>;
@@ -295,51 +295,51 @@ if( !$new_btn_layout ){
 	font-family: <?php echo $fontFamily; ?>
 }
 
-.xoo-wsc-drawer{
+.osc-drawer{
 	max-width: <?php echo $drawerWidth; ?>px;
 }
 
-.xoo-wsc-cart-active .xoo-wsc-container, .xoo-wsc-slider-active .xoo-wsc-slider{
+.osc-cart-active .osc-container, .osc-slider-active .osc-slider{
 	<?php echo $openFrom ?>: 0;
 }
 
-.xoo-wsc-drawer-active .xoo-wsc-drawer{
+.osc-drawer-active .osc-drawer{
 	<?php echo $openFrom ?>: <?php echo $cartWidth ?>px;
 }
-.xoo-wsc-drawer{
+.osc-drawer{
 	<?php echo $openFrom ?>: 0;
 }
 
 <?php if( $footerStick !== 'yes' ): ?>
 
-.xoo-wsc-container {
+.osc-container {
     overflow: auto;
 }
 
-.xoo-wsc-body{
+.osc-body{
 	overflow: unset;
 	flex-grow: 0;
 }
-.xoo-wsc-footer{
+.osc-footer{
 	flex-grow: 1;
 }
 
 <?php endif; ?>
 
-.xoo-wsc-cart-active .xoo-wsc-basket{
+.osc-cart-active .osc-basket{
 	<?php echo $openFrom ?>: <?php echo $cartWidth ?>px;
 }
 
-span.xoo-wsch-icon{
+span.osch-icon{
 	font-size: <?php echo $headerIconSize ?>px;
 }
 
 
-.xoo-wsch-text, .xoo-wsc-sl-heading, .xoo-wsc-drawer-header{
+.osch-text, .osc-sl-heading, .osc-drawer-header{
 	font-size: <?php echo $headFontSize ?>px;
 }
 
-.xoo-wsc-header, .xoo-wsc-drawer-header, .xoo-wsc-sl-heading{
+.osc-header, .osc-drawer-header, .osc-sl-heading{
 	color: <?php echo $headTxtColor ?>;
 	background-color: <?php echo $headBGColor ?>;
 	border-bottom: <?php echo $headBorder ?>;
@@ -347,16 +347,16 @@ span.xoo-wsch-icon{
 }
 
 
-.xoo-wsc-body{
+.osc-body{
 	background-color: <?php echo $bodyBGColor ?>;
 }
 
-.xoo-wsc-body, .xoo-wsc-body span.amount, .xoo-wsc-body a{
+.osc-body, .osc-body span.amount, .osc-body a{
 	font-size: <?php echo $bodyFontSize ?>px;
 	color: <?php echo $bodyTxtColor ?>;
 }
 
-.xoo-wsc-product, .xoo-wsc-sp-product, .xoo-wsc-savl-product{
+.osc-product, .osc-sp-product, .osc-savl-product{
 	padding: <?php echo $bPpadding ?>;
 	margin: <?php echo $bPmargin ?>;
 	border-radius: <?php echo $bPradius ?>px;
@@ -364,75 +364,75 @@ span.xoo-wsch-icon{
 	background-color: <?php echo $bpBgColor ?>;
 }
 
-.xoo-wsc-body .xoo-wsc-ft-totals{
+.osc-body .osc-ft-totals{
 	padding: <?php echo $bPpadding ?>;
 	margin: <?php echo $bPmargin ?>;
 }
 
-.xoo-wsc-product-cont{
+.osc-product-cont{
 	padding: <?php echo $bPCardpadding ?>;
 }
 
-.xoo-wsc-products:not(.xoo-wsc-pattern-card) .xoo-wsc-img-col{
+.osc-products:not(.osc-pattern-card) .osc-img-col{
 	width: <?php echo $bPimgwidth ?>%;
 }
 
-.xoo-wsc-pattern-card .xoo-wsc-img-col img{
+.osc-pattern-card .osc-img-col img{
 	max-width: <?php echo $bPCardimgwidth ?>%;
 	height: <?php echo ($bPCardimgheight > 0 ? $bPCardimgheight.'px' : 'auto') ?>;
 }
 
-.xoo-wsc-products:not(.xoo-wsc-pattern-card) .xoo-wsc-sum-col{
+.osc-products:not(.osc-pattern-card) .osc-sum-col{
 	width: <?php echo 100-$bPimgwidth ?>%;
 }
 
-.xoo-wsc-pattern-card .xoo-wsc-product-cont{
+.osc-pattern-card .osc-product-cont{
 	width: <?php echo 100/$bpCardCount ?>% 
 }
 
 <?php if( $bpCardCount > 1 ): ?>
 @media only screen and (max-width: 600px) {
-	.xoo-wsc-pattern-card .xoo-wsc-product-cont  {
+	.osc-pattern-card .osc-product-cont  {
 		width: 50%;
 	}
 }
 
 <?php endif; ?>
 
-.xoo-wsc-pattern-card .xoo-wsc-product{
+.osc-pattern-card .osc-product{
 	border: <?php echo $bpCardBorder ?>;
 	box-shadow: <?php echo $bPCardShadow ?>;
 }
 
 <?php if( $bPCardimgwidth < 100 ): ?>
-.xoo-wsc-pattern-card .xoo-wsc-img-col{
+.osc-pattern-card .osc-img-col{
 	background-color: <?php echo $bpCardImgColor ?>;
 }
 <?php endif; ?>
 
-.xoo-wsc-sm-front, .xoo-wsc-card-actionbar > *{
+.osc-sm-front, .osc-card-actionbar > *{
 	background-color: <?php echo $bpCardFrtColor ?>;
 }
-.xoo-wsc-pattern-card, .xoo-wsc-sm-front{
+.osc-pattern-card, .osc-sm-front{
 	border-bottom-left-radius: <?php echo $bPCardRadBtm; ?>px;
 	border-bottom-right-radius: <?php echo $bPCardRadBtm; ?>px;
 }
-.xoo-wsc-pattern-card, .xoo-wsc-img-col img, .xoo-wsc-img-col, .xoo-wsc-sm-back-cont{
+.osc-pattern-card, .osc-img-col img, .osc-img-col, .osc-sm-back-cont{
 	border-top-left-radius: <?php echo $bPCardRadTop; ?>px;
 	border-top-right-radius: <?php echo $bPCardRadTop; ?>px;
 }
-.xoo-wsc-sm-back{
+.osc-sm-back{
 	background-color: <?php echo $bpCardBckColor ?>;
 }
-.xoo-wsc-pattern-card, .xoo-wsc-pattern-card a, .xoo-wsc-pattern-card .amount{
+.osc-pattern-card, .osc-pattern-card a, .osc-pattern-card .amount{
 	font-size: <?php echo $bodyFontSize ?>px;
 }
 
-.xoo-wsc-body .xoo-wsc-sm-front, .xoo-wsc-body .xoo-wsc-sm-front a, .xoo-wsc-body .xoo-wsc-sm-front .amount, .xoo-wsc-card-actionbar{
+.osc-body .osc-sm-front, .osc-body .osc-sm-front a, .osc-body .osc-sm-front .amount, .osc-card-actionbar{
 	color: <?php echo $bpCardTxtColor ?>;
 }
 
-.xoo-wsc-sm-back, .xoo-wsc-sm-back a, .xoo-wsc-sm-back .amount{
+.osc-sm-back, .osc-sm-back a, .osc-sm-back .amount{
 	color: <?php echo $bpCardBckTxtColor ?>;
 }
 
@@ -442,39 +442,39 @@ span.xoo-wsch-icon{
 }
 
 <?php if( wp_is_mobile() && $sy['scb-playout'] === 'cards' && $sy['scbp-card-visible'] === 'back_hover' ) :?>
-.xoo-wsc-img-col a{
+.osc-img-col a{
 	pointer-events: none;
 }
 <?php endif; ?>
 
 
 <?php if( $bpDisplay === 'stretched' ): ?>
-.xoo-wsc-sm-info{
+.osc-sm-info{
 	flex-grow: 1;
     align-self: stretch;
 }
 
-.xoo-wsc-sm-left{
+.osc-sm-left{
 	justify-content: space-evenly;
 }
 
 <?php else: ?>
-.xoo-wsc-sum-col{
+.osc-sum-col{
 	justify-content: <?php echo $bpDisplay ?>;
 }
 <?php endif; ?>
 
 /***** Quantity *****/
 
-.xoo-wsc-qty-box{
+.osc-qty-box{
 	max-width: <?php echo $qtyWidth ?>px;
 }
 
-.xoo-wsc-qty-box.xoo-wsc-qtb-square{
+.osc-qty-box.osc-qtb-square{
 	border-color: <?php echo $btnBorColor ?>;
 }
 
-input[type="number"].xoo-wsc-qty{
+input[type="number"].osc-qty{
 	border-color: <?php echo $inputBorColor ?>;
 	background-color: <?php echo $inputBgColor ?>;
 	color: <?php echo $inputTxtColor ?>;
@@ -482,36 +482,36 @@ input[type="number"].xoo-wsc-qty{
 	line-height: <?php echo $qtyHeight ?>px;
 }
 
-input[type="number"].xoo-wsc-qty, .xoo-wsc-qtb-square{
+input[type="number"].osc-qty, .osc-qtb-square{
 	border-width: <?php echo $qtyBorsize ?>px;
 	border-style: solid;
 }
-.xoo-wsc-chng{
+.osc-chng{
 	background-color: <?php echo $btnBgColor ?>;
 	color: <?php echo $btnTxtColor ?>;
 	width: <?php echo $qtybtnsize ?>px;
 }
 
-.xoo-wsc-qtb-circle .xoo-wsc-chng{
+.osc-qtb-circle .osc-chng{
 	height: <?php echo $qtybtnsize ?>px;
 	line-height: <?php echo $qtybtnsize ?>px;
 }
 
 /** Shortcode **/
-.xoo-wsc-sc-count{
+.osc-sc-count{
 	background-color: <?php echo $SCcountBG ?>;
 	color: <?php echo $SCcountColor ?>;
 }
 
-.xoo-wsc-sc-bki{
+.osc-sc-bki{
 	font-size: <?php echo $SCbasketSize ?>px;
 	color: <?php echo $SCbasketColor ?>;
 }
-.xoo-wsc-sc-cont{
+.osc-sc-cont{
 	color: <?php echo $SCtxtColor ?>;
 }
 
-.xoo-wsc-sp-column li.xoo-wsc-sp-prod-cont{
+.osc-sp-column li.osc-sp-prod-cont{
 	width: <?php echo (100/$spColCount) ?>%;
 }
 
@@ -526,12 +526,12 @@ input[type="number"].xoo-wsc-qty, .xoo-wsc-qtb-square{
 <?php endif; ?>
 
 
-span.xoo-wsc-dtg-icon{
+span.osc-dtg-icon{
 	<?php echo $openFrom ?>: calc(100% - 11px );
 }
 
 
-.xoo-wsc-sp-product{
+.osc-sp-product{
 	background-color: <?php echo $spPrdBGColor ?>;
 }
 
@@ -540,16 +540,16 @@ span.xoo-wsc-dtg-icon{
 <?php if( $minBasketMob === 'yes' ): ?>
 
 @media only screen and (max-width: 600px) {
-	.xoo-wsc-basket {
+	.osc-basket {
 	    width: 40px;
 	    height: 40px;
 	}
 
-	.xoo-wsc-bki {
+	.osc-bki {
 	    font-size: 20px;
 	}
 
-	span.xoo-wsc-items-count {
+	span.osc-items-count {
 	    width: 17px;
 	    height: 17px;
 	    line-height: 17px;
@@ -561,39 +561,39 @@ span.xoo-wsc-dtg-icon{
 
 <?php endif; ?>
 
-.xoo-wsc-markup dl.variation {
+.osc-markup dl.variation {
 	display: <?php echo $bpVarFormat === 'one_line' ? 'flex' : 'block' ?>;
 }
 
 
-.xoo-wsc-sl-savelater .xoo-wsc-sl-body {
+.osc-sl-savelater .osc-sl-body {
 	background-color: <?php echo $savlBGColor ?>;
 }
 
-.xoo-wsc-savl-left-col img, .xoo-wsc-savl-left-col{
+.osc-savl-left-col img, .osc-savl-left-col{
 	max-width: <?php echo $savlImgWidth ?>px;
 }
 
-.xoo-wsc-savl-column li.xoo-wsc-savl-prod-cont{
+.osc-savl-column li.osc-savl-prod-cont{
 	width: <?php echo (100/$savlColCount) ?>%;
 }
 
-.xoo-wsc-savl-product{
+.osc-savl-product{
 	background-color: <?php echo $savlPrdBGColor ?>;
 }
 
-.xoo-wsc-savl-column .xoo-wsc-savl-prod-cont{
+.osc-savl-column .osc-savl-prod-cont{
 	width: <?php echo (100/$savlColCount) ?>%;
 }
 
 
-.xoo-wsc-savl-right-col, .xoo-wsc-savl-right-col .amount, .xoo-wsc-savl-right-col a {
+.osc-savl-right-col, .osc-savl-right-col .amount, .osc-savl-right-col a {
 	font-size: <?php echo $savlFontSize ?>px;
 	color: <?php echo $savlTxtColor ?>;
 }
 
 <?php if( $gl['m-tooltip'] !== 'yes' ): ?>
-.xoo-wsc-tooltip{
+.osc-tooltip{
 	display: none!important;
 }
 <?php endif; ?>
@@ -601,23 +601,23 @@ span.xoo-wsc-dtg-icon{
 
 
 
-.xoo-wsc-save, .xoo-wsc-smr-del{
+.osc-save, .osc-smr-del{
 	font-size: <?php echo $bodyIconSize; ?>px
 }
 
-.xoo-wsc-sm-sales{
+.osc-sm-sales{
 	background-color: <?php echo $bpSalesColor ?>;
 	color: <?php echo $bpSalestxtColor ?>;
 	border: <?php echo $bpSalesBorder ?>;
 }
 
-<?php echo xoo_wsc_bars()->bars_css(); ?>
+<?php echo osc_bars()->bars_css(); ?>
 
 <?php 
 
 if( WC()->cart->get_cart_contents_count() === 0 ){
 
-	$shortcodeEls = xoo_wsc_frontend()->shortcodeEls;
+	$shortcodeEls = osc_frontend()->shortcodeEls;
 
 	$hideEls = array();
 
@@ -640,12 +640,12 @@ if( WC()->cart->get_cart_contents_count() === 0 ){
 
 <?php if( $sy['scm-info-loc'] === "body_end_stick" ): ?>
 
-.xoo-wsc-body{
+.osc-body{
 	display: flex;
 	flex-direction: column;
 }
 
-.xoo-wsc-body .xoo-wsc-info-cont{
+.osc-body .osc-info-cont{
 	margin-top: auto;
 	margin-bottom: 5px;
 }

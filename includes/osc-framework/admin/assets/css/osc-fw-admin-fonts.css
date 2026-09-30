@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'OSC-Admin';
+  src:  url('fonts/OSC-Admin.eot?b4ddl');
+  src:  url('fonts/OSC-Admin.eot?b4ddl#iefix') format('embedded-opentype'),
+    url('fonts/OSC-Admin.ttf?b4ddl') format('truetype'),
+    url('fonts/OSC-Admin.woff?b4ddl') format('woff'),
+    url('fonts/OSC-Admin.svg?b4ddl#OSC-Admin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="osc-fw-icon-"], [class*=" osc-fw-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'OSC-Admin' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.osc-fw-icon-paint:before {
+  content: "\e905";
+}
+.osc-fw-icon-border:before {
+  content: "\e906";
+}
+.osc-fw-icon-cursor:before {
+  content: "\e901";
+}
+.osc-fw-icon-ruler:before {
+  content: "\e902";
+}
+.osc-fw-icon-light:before {
+  content: "\e904";
+}
+.osc-fw-icon-help:before {
+  content: "\e91f";
+}
+.osc-fw-icon-window:before {
+  content: "\e920";
+}
+.osc-fw-icon-close:before {
+  content: "\e91e";
+}
+.osc-fw-icon-store:before {
+  content: "\e91b";
+}
+.osc-fw-icon-heartplus:before {
+  content: "\e91c";
+}
+.osc-fw-icon-globe:before {
+  content: "\e91d";
+}
+.osc-fw-icon-plus:before {
+  content: "\e916";
+}
+.osc-fw-icon-copy:before {
+  content: "\e917";
+}
+.osc-fw-icon-minus:before {
+  content: "\e918";
+}
+.osc-fw-icon-delete:before {
+  content: "\e919";
+}
+.osc-fw-icon-edit:before {
+  content: "\e91a";
+}
+.osc-fw-icon-save:before {
+  content: "\e90d";
+}
+.osc-fw-icon-refresh:before {
+  content: "\e914";
+}
+.osc-fw-icon-export:before {
+  content: "\e915";
+}
+.osc-fw-icon-footer:before {
+  content: "\e90c";
+}
+.osc-fw-icon-header:before {
+  content: "\e911";
+}
+.osc-fw-icon-page:before {
+  content: "\e90e";
+}
+.osc-fw-icon-code:before {
+  content: "\e90f";
+}
+.osc-fw-icon-link:before {
+  content: "\e910";
+}
+.osc-fw-icon-cart:before {
+  content: "\e912";
+}
+.osc-fw-icon-home:before {
+  content: "\e913";
+}
+.osc-fw-icon-info:before {
+  content: "\e903";
+}
+.osc-fw-icon-gift:before {
+  content: "\e907";
+}
+.osc-fw-icon-crown:before {
+  content: "\e908";
+}
+.osc-fw-icon-tune:before {
+  content: "\e909";
+}
+.osc-fw-icon-brush:before {
+  content: "\e90a";
+}
+.osc-fw-icon-setting:before {
+  content: "\e90b";
+}
+.osc-fw-icon-tools:before {
+  content: "\e900";
+}
+.osc-fw-icon-color:before {
+  content: "\ea0e";
+}

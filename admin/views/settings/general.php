@@ -13,10 +13,10 @@ if( function_exists('xoo_el') ){
 	$loginPopupTxt 		= '<a href="'.admin_url( 'admin.php?page=easy-login-woocommerce-settings' ).'" target="_blank">Plugin Settings</a>';
 }
 else{
-	$loginPopupAction 	= xoo_wsc_admin_settings()->is_plugin_installed('easy-login-woocommerce') ? 'Activate Plugin' : 'Install Plugin'; 
+	$loginPopupAction 	= osc_admin_settings()->is_plugin_installed('easy-login-woocommerce') ? 'Activate Plugin' : 'Install Plugin'; 
 	$loginPopupTxt 		= 'This feature requires our separate login/register popup plugin.<br>
-							<div class="xoo-wsc-el-links">
-								<a target="nolink" class="xoo-wsc-el-install">'.$loginPopupAction.'</a>
+							<div class="osc-el-links">
+								<a target="nolink" class="osc-el-install">'.$loginPopupAction.'</a>
 								<a href="https://wordpress.org/plugins/easy-login-woocommerce/" target="_blank">Plugin Link</a>
 							</div>
 							';
@@ -220,7 +220,7 @@ $settings = array(
 		'default' 	=> array(
 			'gpay'
 		),
-		'desc' 			=> '<a href="https://docs.xootix.com/side-cart-for-woocommerce#payment_buttons" target="_blank">How to setup? Documentation</a>'
+		'desc' 			=> '<a href="https://github.com/fredericomdecastro/open-side-cart" target="_blank">How to setup? Documentation</a>'
 	),
 
 
@@ -589,7 +589,7 @@ $settings = array(
 		'title' 		=> 'Information Box',
 		'id' 			=> 'sct-info',
 		'section_id' 	=> 'texts',
-		'default' 		=> xoo_wsc_admin_settings()->default_info_text(),
+		'default' 		=> osc_admin_settings()->default_info_text(),
 		'desc' 			=> '',
 		'args' 			=> array(
 			'reset' 	=> 'yes'
@@ -742,6 +742,6 @@ $settings = array(
 
 );
 
-return apply_filters( 'xoo_wsc_admin_settings', $settings, 'general' );
+return apply_filters( 'osc_admin_settings', $settings, 'general' );
 
 ?>

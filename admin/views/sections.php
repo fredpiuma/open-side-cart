@@ -9,14 +9,14 @@ $sections = array(
 		'title' => 'Side Cart Header',
 		'id' 	=> 'sc_head',
 		'tab' 	=> 'general',
-		'icon' 	=> 'xoo-icon-header'
+		'icon' 	=> 'osc-fw-icon-header'
 	),
 
 	array(
 		'title' => 'Side Cart Body',
 		'id' 	=> 'sc_body',
 		'tab' 	=> 'general',
-		'icon' 	=> 'xoo-icon-page'
+		'icon' 	=> 'osc-fw-icon-page'
 	),
 
 
@@ -24,14 +24,14 @@ $sections = array(
 		'title' => 'Side Cart Footer',
 		'id' 	=> 'sc_footer',
 		'tab' 	=> 'general',
-		'icon' 	=> 'xoo-icon-footer'
+		'icon' 	=> 'osc-fw-icon-footer'
 	),
 
 		array(
 		'title' => 'Main',
 		'id' 	=> 'main',
 		'tab' 	=> 'general',
-		'icon' 	=> 'xoo-icon-header'
+		'icon' 	=> 'osc-fw-icon-header'
 	),
 
 
@@ -39,8 +39,8 @@ $sections = array(
 		'title' => 'Cart Menu',
 		'id' 	=> 'sh_bk',
 		'tab' 	=> 'general',
-		'desc' 	=> 'You can also use shortcode [xoo_wsc_cart] to generate basket icon anywhere.',
-		'icon' 	=> 'xoo-icon-code'
+		'desc' 	=> 'You can also use shortcode [osc_cart] to generate basket icon anywhere.',
+		'icon' 	=> 'osc-fw-icon-code'
 	),
 
 
@@ -50,7 +50,7 @@ $sections = array(
 		'id' 	=> 'texts',
 		'tab' 	=> 'general',
 		'desc' 	=> 'Leave text empty to remove element',
-		'icon' 	=> 'xoo-icon-page'
+		'icon' 	=> 'osc-fw-icon-page'
 	),
 
 
@@ -59,21 +59,21 @@ $sections = array(
 		'title' => 'URLs',
 		'id' 	=> 'urls',
 		'tab' 	=> 'general',
-		'icon' 	=> 'xoo-icon-link'
+		'icon' 	=> 'osc-fw-icon-link'
 	),
 
 	array(
 		'title' => 'Basket',
 		'id' 	=> 'basket',
 		'tab' 	=> 'general',
-		'icon' 	=> 'xoo-icon-cart'
+		'icon' 	=> 'osc-fw-icon-cart'
 	),
 
 	array(
 		'title' => 'Suggested Products',
 		'id' 	=> 'suggested_products',
 		'tab' 	=> 'general',
-		'icon' 	=> 'xoo-icon-header'
+		'icon' 	=> 'osc-fw-icon-header'
 	),
 
 	array(
@@ -81,7 +81,7 @@ $sections = array(
 		'id' 	=> 'save_for_later',
 		'tab' 	=> 'general',
 		'desc' 	=> 'Allow users to save items in their cart for later purchase.',
-		'icon' 	=> 'xoo-icon-header'
+		'icon' 	=> 'osc-fw-icon-header'
 	),
 
 
@@ -91,7 +91,7 @@ $sections = array(
 		'title' => 'Button Themes',
 		'id' 	=> 'sc_button_theme_creator',
 		'tab' 	=> 'style',
-		'icon' 	=> 'xoo-icon-tune',
+		'icon' 	=> 'osc-fw-icon-tune',
 		'desc' 	=> 'Create and manage reusable button styles for side cart.'
 	),
 
@@ -99,37 +99,37 @@ $sections = array(
 		'title' => 'Main',
 		'id' 	=> 'sc_main',
 		'tab' 	=> 'style',
-		'icon' 	=> 'xoo-icon-home'
+		'icon' 	=> 'osc-fw-icon-home'
 	),
 
 	array(
 		'title' => 'Side Cart Basket',
 		'id' 	=> 'sc_basket',
 		'tab' 	=> 'style',
-		'desc' 	=> 'You can also add basket to your menu bar using shortcode [xoo_wsc_cart]. Please see info tab for more.',
-		'icon' 	=> 'xoo-icon-cart'
+		'desc' 	=> 'You can also add basket to your menu bar using shortcode [osc_cart]. Please see info tab for more.',
+		'icon' 	=> 'osc-fw-icon-cart'
 	),
 
 	array(
 		'title' => 'Side Cart Header',
 		'id' 	=> 'sc_head',
 		'tab' 	=> 'style',
-		'icon' 	=> 'xoo-icon-header'
+		'icon' 	=> 'osc-fw-icon-header'
 	),
 
 	array(
 		'title' => 'Side Cart Body',
 		'id' 	=> 'sc_body',
 		'tab' 	=> 'style',
-		'icon' 	=> 'xoo-icon-page'
+		'icon' 	=> 'osc-fw-icon-page'
 	),
 
 	array(
 		'title' => 'Product - Row layout',
 		'id' 	=> 'scb_product',
 		'tab' 	=> 'style',
-		'desc' 	=> xoo_wsc_helper()->get_style_option('scbp-card-en') === 'yes' ? ' XX No effect XX. Please make sure CARD LAYOUT is disabled' : '',
-		'icon' 	=> 'xoo-icon-header' 
+		'desc' 	=> osc_helper()->get_style_option('scbp-card-en') === 'yes' ? ' XX No effect XX. Please make sure CARD LAYOUT is disabled' : '',
+		'icon' 	=> 'osc-fw-icon-header' 
 	),
 
 	array(
@@ -137,21 +137,21 @@ $sections = array(
 		'id' 	=> 'scb_productcard',
 		'tab' 	=> 'style',
 		'desc' 	=> 'Show your product items as cards',
-		'icon' 	=> 'xoo-icon-header'
+		'icon' 	=> 'osc-fw-icon-header'
 	),
 
 	array(
 		'title' => 'Quantity Box',
 		'id' 	=> 'scb_qty',
 		'tab' 	=> 'style',
-		'icon' 	=> 'xoo-icon-header'
+		'icon' 	=> 'osc-fw-icon-header'
 	),
 
 	array(
 		'title' => 'Side Cart Footer',
 		'id' 	=> 'sc_footer',
 		'tab' 	=> 'style',
-		'icon' 	=> 'xoo-icon-footer'
+		'icon' 	=> 'osc-fw-icon-footer'
 	),
 
 
@@ -159,7 +159,7 @@ $sections = array(
 		'title' => 'Suggested Products',
 		'id' 	=> 'sc_sug_products',
 		'tab' 	=> 'style',
-		'icon' 	=> 'xoo-icon-store'
+		'icon' 	=> 'osc-fw-icon-store'
 	),
 
 
@@ -167,7 +167,7 @@ $sections = array(
 		'title' => 'Saved for Later',
 		'id' 	=> 'saved_for_later',
 		'tab' 	=> 'style',
-		'icon' 	=> 'xoo-icon-heartplus'
+		'icon' 	=> 'osc-fw-icon-heartplus'
 	),
 
 
@@ -175,8 +175,8 @@ $sections = array(
 		'title' => 'Cart Menu / Shortcode',
 		'id' 	=> 'sh_bk',
 		'tab' 	=> 'style',
-		'desc' 	=> 'Use shortcode [xoo_wsc_cart] to generate basket icon anywhere.',
-		'icon' 	=> 'xoo-icon-code'
+		'desc' 	=> 'Use shortcode [osc_cart] to generate basket icon anywhere.',
+		'icon' 	=> 'osc-fw-icon-code'
 	),
 
 
@@ -185,7 +185,7 @@ $sections = array(
 		'title' => 'Global Settings',
 		'id' 	=> 'general',
 		'tab' 	=> 'rewards',
-		'icon' 	=> 'xoo-icon-gift',
+		'icon' 	=> 'osc-fw-icon-gift',
 	),
 
 	/* Custom CSS TAB Sections */
@@ -193,8 +193,8 @@ $sections = array(
 		'title' => 'Main',
 		'id' 	=> 'av_main',
 		'tab' 	=> 'advanced',
-		'icon' 	=> 'xoo-icon-home'
+		'icon' 	=> 'osc-fw-icon-home'
 	)
 );
 
-return apply_filters( 'xoo_wsc_admin_settings_sections', $sections );
+return apply_filters( 'osc_admin_settings_sections', $sections );
