@@ -1,0 +1,36 @@
+== 2.0.0 == 20-06-2026
+* New Button Themes
+* Settings new UI
+
+== 1.7.7 == 16-06-2026
+* WP editor settings
+
+== 1.7.6 == 09-06-2026
+* New button setting
+
+== 1.7.5 == 13-02-2026
+* New border setting
+
+== 1.7.4 == 13-11-2025
+* Setting changes
+
+== 1.7.3 = 19-08-2025
+* Style changes
+
+== 1.7.2 == 06-07-2025
+* Allow xoo_exception to return wp_error
+
+== 1.7.1 == 28-06-2025
+* Column gap fix
+
+== 1.7 == 24-06-2025
+* sanitization 
+
+== 1.6 == 14-05-2025
+* Added new image setting
+
+== 1.5 == 02-05-2025
+* Added sections navigation
+
+== 1.4 == 30-04-2025
+* Usage data
