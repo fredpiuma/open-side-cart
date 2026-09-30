@@ -220,7 +220,7 @@ $settings = array(
 		'default' 	=> array(
 			'gpay'
 		),
-		'desc' 			=> '<a href="https://github.com/fredericomdecastro/open-side-cart" target="_blank">How to setup? Documentation</a>'
+		'desc' 			=> '<a href="https://github.com/fredpiuma/open-side-cart" target="_blank">How to setup? Documentation</a>'
 	),
 
 

@@ -243,7 +243,7 @@ class OSC_FW_Helper{
 			<?php else: ?>
 				<div>Templates Status
 				<span class="dashicons dashicons-yes-alt" style="font-size: 14px;color: #008000;line-height: 1.3;"></span>
-				<a href="https://github.com/fredericomdecastro/open-side-cart<?php echo esc_attr( $this->slug ); ?>" target="_blank">How to override?</a>
+				<a href="https://github.com/fredpiuma/open-side-cart<?php echo esc_attr( $this->slug ); ?>" target="_blank">How to override?</a>
 				</div>
 			<?php endif; ?>
 			<span>Last checked: <?php echo esc_html( get_date_from_gmt( date( 'Y-m-d H:i:s', $odTempData['last_scanned'] ) ) ); ?></span>

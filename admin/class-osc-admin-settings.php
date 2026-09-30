@@ -235,7 +235,7 @@ class OSC_Admin_Settings{
 	public function plugin_action_links( $links ) {
 		$action_links = array(
 			'settings' 	=> '<a href="' . admin_url( 'admin.php?page=open-side-cart-settings' ) . '">Settings</a>',
-			'support' 	=> '<a href="https://github.com/fredericomdecastro/open-side-cart/issues" target="__blank">Support</a>',
+			'support' 	=> '<a href="https://github.com/fredpiuma/open-side-cart/issues" target="__blank">Support</a>',
 		);
 
 		return array_merge( $action_links, $links );

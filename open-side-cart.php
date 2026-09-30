@@ -1,11 +1,11 @@
 <?php
 /**
 * Plugin Name: Open Side Cart for WooCommerce
-* Plugin URI: https://github.com/fredericomdecastro/open-side-cart
+* Plugin URI: https://github.com/fredpiuma/open-side-cart
 * Description: Manage your cart from just a click away. Open source fork of Woocommerce Side Cart Premium 4.9.1 by XootiX.
 * Version: 1.0.0
 * Author: Frederico de Castro
-* Author URI: https://github.com/fredericomdecastro
+* Author URI: https://github.com/fredpiuma
 * License: GPL-2.0-or-later
 * License URI: https://www.gnu.org/licenses/gpl-2.0.html
 * Text Domain: open-side-cart

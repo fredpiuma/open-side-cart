@@ -79,7 +79,7 @@ $sections = $adminObj->sections;
 			<div class="osc-fw-as-setbar-help">
 				<div><span class="osc-fw-as-icon osc-fw-icon-help"></span>Need Help?</div>
 				<span>Check our documentation or contact support.</span>
-				<a href="https://github.com/fredericomdecastro/open-side-cart/issues" class="osc-fw-btn osc-fw-btn-secondary" target="__blank"><span class="osc-fw-as-icon osc-fw-icon-window"></span>Contact</a>
+				<a href="https://github.com/fredpiuma/open-side-cart/issues" class="osc-fw-btn osc-fw-btn-secondary" target="__blank"><span class="osc-fw-as-icon osc-fw-icon-window"></span>Contact</a>
 			</div>
 
 		</div>

@@ -19,5 +19,5 @@
 	<h4>Go to style tab -> Side cart Footer & change button design option to "Custom", you can then set your own colors above</h4>
 </p>
 <p style="border: 1px solid #eee">
-	<h3><a href="https://github.com/fredericomdecastro/open-side-cart" target="__blank">Documentation</a></h3>
+	<h3><a href="https://github.com/fredpiuma/open-side-cart" target="__blank">Documentation</a></h3>
 </p>

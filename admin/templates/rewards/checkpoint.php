@@ -13,7 +13,7 @@
 
 			<# if ( data.type === "freeshipping" ) { #>
 			<div class="osc-fw-scbhk-ship-title">
-				<i>The checkpoint amount is fetched from Free shipping method ( woocommerce shipping settings ).<br> Please make sure you have a free shipping method available for customers' location.<br><a href="https://github.com/fredericomdecastro/open-side-cart" target="__blank">Read more</a></i><br>
+				<i>The checkpoint amount is fetched from Free shipping method ( woocommerce shipping settings ).<br> Please make sure you have a free shipping method available for customers' location.<br><a href="https://github.com/fredpiuma/open-side-cart" target="__blank">Read more</a></i><br>
 			</div>
 			<# } #>
 

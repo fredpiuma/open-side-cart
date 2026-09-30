@@ -8,7 +8,7 @@
  * (the theme developer) will need to copy the new files to your theme to
  * maintain compatibility. We try to do this as little as possible, but it does
  * happen.
- * @see     https://github.com/fredericomdecastro/open-side-cart
+ * @see     https://github.com/fredpiuma/open-side-cart
  * @version 4.0
  */
 
