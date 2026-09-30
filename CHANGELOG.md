@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.2 — 2026-09-30
+
+- Add Brazilian Portuguese (pt_BR) translation, bundled with the plugin.
+- Add the quick view "Update" string to the translation template (.pot).
+
 ## 1.0.1 — 2026-09-30
 
 - Make the quick view "Update" button text translatable.

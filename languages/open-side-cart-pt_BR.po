@@ -1,250 +1,252 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Open Side Cart for WooCommerce\n"
 "POT-Creation-Date: 2026-09-30 21:30+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2026-09-30 21:40+0000\n"
 "Last-Translator: \n"
-"Language-Team: \n"
+"Language-Team: Português do Brasil\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-Basepath: ..\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-KeywordsList: __;_e;esc_attr_e\n"
 "X-Poedit-SearchPath-0: .\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: pt-BR\n"
+"X-Loco-Version: 2.8.9; wp-7.1.2; php-8.3.33"
 
 #: admin/templates/preview/osc-footer-totals.php:16
 #: includes/class-osc-cart.php:778
 msgid "Shipping"
-msgstr ""
+msgstr "Frete"
 
 #: admin/templates/preview/osc-footer-totals.php:19
 #: includes/class-osc-cart.php:910
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: admin/templates/preview/osc-product-card-preview.php:3
 #: templates/global/body/product-card.php:31
 msgid "View"
-msgstr ""
+msgstr "Ver"
 
 #: admin/templates/preview/osc-product-card-preview.php:9
 #: admin/templates/preview/osc-product-row-preview.php:132
 #: templates/global/body/product-card.php:32
 #: templates/global/body/product.php:140
 msgid "Price: "
-msgstr ""
+msgstr "Preço: "
 
 #: admin/templates/preview/osc-product-card-preview.php:74
 #: admin/templates/preview/osc-product-row-preview.php:120
 #: templates/global/body/product-card.php:93
 #: templates/global/body/product.php:128
 msgid "Qty:"
-msgstr ""
+msgstr "Qtd:"
 
 #: admin/templates/preview/osc-product-card-preview.php:102
 #: admin/templates/preview/osc-product-row-preview.php:180
 #: templates/global/body/product-card.php:150
 #: templates/global/body/product.php:202
 msgid "Save for Later"
-msgstr ""
+msgstr "Salvar"
 
 #: admin/templates/preview/osc-product-row-preview.php:82
 #: templates/global/body/product.php:97
 msgid "shoppers have bought this"
-msgstr ""
+msgstr "clientes compraram este produto"
 
 #: admin/templates/rewards/checkpoint.php:56
 #: admin/templates/rewards/progressbar.php:171
 msgid "Search for a product&hellip;"
-msgstr ""
+msgstr "Buscar um produto&hellip;"
 
 #: includes/class-osc-cart.php:372
 msgid "Congratulations! Free gift has been added to your cart."
-msgstr ""
+msgstr "Parabéns! Um brinde foi adicionado ao seu carrinho."
 
 #: includes/class-osc-cart.php:386
 msgid "Free gift has been removed from your cart."
-msgstr ""
+msgstr "O brinde foi removido do seu carrinho."
 
 #: includes/class-osc-cart.php:402
 msgid "Cart Emptied"
-msgstr ""
+msgstr "Carrinho esvaziado"
 
 #: includes/class-osc-cart.php:442
 msgid "Item added to cart"
-msgstr ""
+msgstr "Item adicionado ao carrinho"
 
 #: includes/class-osc-cart.php:466
 msgid "Shipping updated"
-msgstr ""
+msgstr "Frete atualizado"
 
 #: includes/class-osc-cart.php:511
 msgid "Something went wrong"
-msgstr ""
+msgstr "Algo deu errado"
 
 #: includes/class-osc-cart.php:524
 msgid "Item removed"
-msgstr ""
+msgstr "Item removido"
 
 #: includes/class-osc-cart.php:526
 msgid "Undo?"
-msgstr ""
+msgstr "Desfazer?"
 
 #: includes/class-osc-cart.php:530
 msgid "Item updated"
-msgstr ""
+msgstr "Item atualizado"
 
 #: includes/class-osc-cart.php:558
 msgid "Item added back"
-msgstr ""
+msgstr "Item adicionado novamente"
 
 #: includes/class-osc-cart.php:571
 msgid "Address updated"
-msgstr ""
+msgstr "Endereço atualizado"
 
 #: includes/class-osc-cart.php:717
 #, php-format
 msgid "%s applied successfully"
-msgstr ""
+msgstr "%s aplicado com sucesso"
 
 #: includes/class-osc-cart.php:726
 msgid "Coupon has been removed"
-msgstr ""
+msgstr "O cupom foi removido"
 
 #: includes/class-osc-cart.php:800
 #: templates/global/slider/calculate-shipping.php:83
 msgid "Shipping costs are calculated during checkout."
-msgstr ""
+msgstr "A entrega é calculada no checkout."
 
 #: includes/class-osc-cart.php:810
 msgid "Calculate"
-msgstr ""
+msgstr "Calcular"
 
 #: includes/class-osc-cart.php:852
 msgid "Tax"
-msgstr ""
+msgstr "Imposto"
 
 #: includes/class-osc-cart.php:890
 msgid "Discount"
-msgstr ""
+msgstr "Desconto"
 
 #: includes/class-osc-cart.php:1310
 msgid "Item has been removed from Save For Later."
-msgstr ""
+msgstr "Item removido dos favoritos"
 
 #: includes/class-osc-cart.php:1370
 msgid "Item added to cart."
-msgstr ""
+msgstr "Item adicionado ao carrinho."
 
 #: includes/class-osc-cart.php:1530
 #, php-format
 msgid "<span %1$s>Save</span> %2$s"
-msgstr ""
+msgstr "<span %1$s>Economize</span> %2$s"
 
 #: includes/class-osc-frontend.php:124
 #: templates/global/body/product-card.php:201
 #: templates/global/body/product.php:186
 msgid "Free Gift"
-msgstr ""
+msgstr "Brinde"
 
 #: includes/class-osc-frontend.php:261
 msgid "Only %s% in stock"
-msgstr ""
+msgstr "Temos apenas %s% em estoque"
 
 #: includes/class-osc-frontend.php:262
 msgid "Quantity can only be purchased in multiple of %s%"
-msgstr ""
+msgstr "A quantidade só pode ser comprada em múltiplos de %s%"
 
 #: includes/class-osc-frontend.php:263
 msgid "Please use checkout form to calculate shipping"
-msgstr ""
+msgstr "Favor ir ao checkout para calcular a entrega"
 
 #: includes/class-osc-frontend.php:264
 msgid "Please enter promo code"
-msgstr ""
+msgstr "Favor inserir o cupom"
 
 #: includes/osc-framework/class-osc-fw-helper.php:354
 msgid "Some files failed to upload"
-msgstr ""
+msgstr "Alguns arquivos não puderam ser enviados"
 
 #: includes/osc-functions.php:66
 msgid "Add"
-msgstr ""
+msgstr "Adicionar"
 
 #: includes/class-osc-cart.php:172
 msgid "Update"
-msgstr ""
+msgstr "Atualizar"
 
 #: templates/global/coupon-form.php:25
 msgid "Enter Promo Code"
-msgstr ""
+msgstr "Insira o cupom"
 
 #: templates/global/coupon-form.php:26
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: templates/global/coupon-form.php:33
 msgid "Saved"
-msgstr ""
+msgstr "Salvo"
 
 #: templates/global/coupon-form.php:36
 msgid "[Remove]"
-msgstr ""
+msgstr "[Remover]"
 
 #: templates/global/footer/extras.php:28 templates/osc-body.php:30
 msgid "Empty Cart"
-msgstr ""
+msgstr "Esvaziar carrinho"
 
 #: templates/global/footer/extras.php:59
 msgid "Apply"
-msgstr ""
+msgstr "Aplicar"
 
 #: templates/global/footer/extras.php:64
 msgid "Have a Promo Code?"
-msgstr ""
+msgstr "Tem um cupom de desconto?"
 
 #: templates/global/slider/apply-coupon.php:24
 #: templates/global/slider/apply-coupon.php:64
 msgid "Apply Coupon"
-msgstr ""
+msgstr "Aplicar cupom"
 
 #: templates/global/slider/apply-coupon.php:47
 msgid "Available Coupons"
-msgstr ""
+msgstr "Cupons disponíveis"
 
 #: templates/global/slider/apply-coupon.php:47
 msgid "Unavailable Coupons"
-msgstr ""
+msgstr "Cupons indisponíveis"
 
 #: templates/global/slider/apply-coupon.php:61
 #, php-format
 msgid "Get %s off"
-msgstr ""
+msgstr "Desconto de %s"
 
 #: templates/global/slider/calculate-shipping.php:24
 msgid "Calculate Shipping"
-msgstr ""
+msgstr "Calcular entrega"
 
 #: templates/global/slider/calculate-shipping.php:54
 msgid "Shipping to:"
-msgstr ""
+msgstr "Entregar para:"
 
 #: templates/global/slider/calculate-shipping.php:57
 msgid "Shipping options will be updated during checkout."
-msgstr ""
+msgstr "As opções de entrega aparecerão no checkout."
 
 #: templates/global/slider/calculate-shipping.php:85
 msgid "Enter your address to view shipping options."
-msgstr ""
+msgstr "Insira seu endereço para ver as opções de entrega."
 
 #: templates/global/slider/save-for-later.php:46
 #, php-format
 msgid "Please %1$slogin%2$s to see your saved products."
-msgstr ""
+msgstr "Por favor, %1$sfaça login%2$s para ver seus produtos salvos."
 
 #: templates/global/slider/save-for-later.php:133
 msgid "Add to Cart"
-msgstr ""
+msgstr "Adicionar ao carrinho"

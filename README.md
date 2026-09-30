@@ -15,6 +15,22 @@ the GPL. See [CREDITS.md](CREDITS.md) for details. Not affiliated with XootiX.
 - Save for later (with optional integration with the Easy Login plugin)
 - Button themes, header/body/footer layouts and a live preview in the settings
 
+## Translations
+
+The plugin ships with a **Brazilian Portuguese (pt_BR)** translation, loaded
+automatically when the site language is Português do Brasil.
+
+Translation files live in `languages/`:
+
+- `open-side-cart.pot`: template with every translatable string;
+- `open-side-cart-pt_BR.po`: source of the translation, editable with Poedit or Loco Translate;
+- `open-side-cart-pt_BR.mo` and `open-side-cart-pt_BR.l10n.php`: compiled files that WordPress reads.
+
+To add a language or adjust a string on your site, use Loco Translate. Keep the
+file in its "Custom" or "System" location so updates don't overwrite it; those
+locations take precedence over the files bundled with the plugin. Contributions of
+new languages are welcome as pull requests.
+
 ## Requirements
 
 - WordPress 6.5+ (uses the `Requires Plugins` header)
