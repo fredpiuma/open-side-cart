@@ -38,11 +38,6 @@ class Xoo_Helper{
 	}
 
 
-	public function get_usage_data(){
-		return array();
-	}
-
-
 	public function get_template( $template_name, $args = array(), $template_path = '', $return = false ){
 
 		$located = $this->locate_template( $template_name, $template_path );

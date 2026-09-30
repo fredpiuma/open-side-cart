@@ -126,9 +126,7 @@ class Xoo_Wsc_Helper extends Xoo_Helper{
 }
 
 function xoo_wsc_helper(){
-	return Xoo_Wsc_Helper::get_instance( 'side-cart-woocommerce', XOO_WSC_PATH, array(
-		'disable_usage' => true
-	) );
+	return Xoo_Wsc_Helper::get_instance( 'side-cart-woocommerce', XOO_WSC_PATH );
 }
 xoo_wsc_helper();
 

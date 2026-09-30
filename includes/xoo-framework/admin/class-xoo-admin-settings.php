@@ -26,8 +26,6 @@ class Xoo_Admin{
 
 	public $capability = 'manage_options';
 
-	public $usageURL 	= 'https://xootix.com/wp-json/usage/v2/data';
-
 	public function __construct( $helper ){
 		$this->helper 			= $helper;
 		$this->settings_slug 	= $this->helper->slug . '-settings';
@@ -69,148 +67,8 @@ class Xoo_Admin{
 			
 		}
 
-		if( isset( $this->helper->helperArgs ) && !isset($this->helper->helperArgs['disable_usage']) ){
-
-			add_action( 'admin_notices', array( $this, 'usage_data_notice' ) );
-			add_action( 'admin_init', array( $this, 'handle_usage_click_response' ) );
-			add_action( 'admin_init', array( $this, 'on_plugin_reactivate' ) );
-
-			if( $this->helper->helperArgs['pluginFile'] ){
-				register_deactivation_hook( $this->helper->helperArgs['pluginFile'] , array( $this, 'on_plugin_deactivate' ) );
-			}
-
-		}
-		
-
 	}
 
-
-	public function usage_data_notice(){
-
-		if( get_option( 'xoo_tracking_consent_'.$this->helper->slug ) !== false ) return;
-
-		$pluginName = isset( $this->helper->helperArgs )  && $this->helper->helperArgs['pluginName'] ? $this->helper->helperArgs['pluginName'] : $this->helper->slug;
-
-		?>
-		<div class="notice notice-info xoo-usage-consent" style="max-width: 1300px;">
-			<p><strong>[<?php echo $pluginName ?>] Help us improve!</strong> We'd love your permission to send anonymous, non-sensitive data (such as your WordPress version, plugin settings, etc.) to help us improve the plugin.<br><strong> No personal information is collected ever</strong></p>
-				<form method="post" action="" class="xoo-usage-consent">
-					<input type="checkbox" name="xoo_allow" value="yes" checked>
-					<input type="hidden" name="xoo_usage_handle" value="yes">
-					<input type="hidden" name="xoo_slug" value="<?php echo $this->helper->slug ?>">
-					<input type="hidden" name="_wpnonce" value="<?php echo wp_create_nonce( 'xoo_usage_nonce' ) ?>">
-					<button type="submit" class="button-small button">ok, dismiss notice</button>
-				</form>
-			</p>
-		</div>
-
-		<style type="text/css">
-			.xoo-usage-consent button{
-
-			}
-		</style>
-
-		<?php
-
-	}
-
-	public function handle_usage_click_response(){
-
-		if( !isset( $_POST['xoo_usage_handle'] ) ) return;
-
-		$slug 		= sanitize_text_field( $_POST['xoo_slug'] );
-		$nonce 		= sanitize_text_field( $_POST['_wpnonce'] );
-		$response 	= sanitize_text_field( $_POST['xoo_allow'] );
-
-		if( $this->helper->slug !== $slug ) return;
-
-		if( !wp_verify_nonce( $_POST['_wpnonce'], 'xoo_usage_nonce' ) ) return;
-
-		update_option( 'xoo_tracking_consent_'.$this->helper->slug, $response );
-
-		$this->usage_data_http_request();
-
-		wp_redirect( remove_query_arg( 'xooisrandom' ) );
-
-	}
-
-
-
-	public function is_usage_allowed(){
-		return get_option( 'xoo_tracking_consent_'.$this->helper->slug, true ) === 'yes';
-	}
-
-
-	public function on_plugin_reactivate(){
-		if( $this->is_usage_allowed() && get_option('xoo_plugin_deactivated_'.$this->helper->slug) === "yes" ){
-			delete_option('xoo_plugin_deactivated_'.$this->helper->slug);
-			$this->usage_data_http_request(array(
-				'active' => 1
-			) );
-		}
-	}
-
-
-	public function usage_data_http_request( $passed_data = array() ) {
-
-		$helperdata = $this->helper->get_usage_data();
-
-		$defaults = array(
-			'slug'       => $this->helper->slug,
-			'site_url'   => get_site_url(),
-			'wp_version' => get_bloginfo( 'version' ),
-			'active'     => 1,
-		);
-
-		$data = array_merge( $defaults, $passed_data, $helperdata );
-
-		$response = wp_remote_post(
-			$this->usageURL,
-			array(
-				'timeout' => 15,
-				'body' => $data,
-			)
-		);
-
-		// Handle request failure
-		if ( is_wp_error( $response ) ) {
-			return array(
-				'success' => false,
-				'error'   => $response->get_error_message(),
-			);
-		}
-
-		$body = wp_remote_retrieve_body( $response );
-
-		if ( empty( $body ) ) {
-			return array(
-				'success' => false,
-				'error'   => 'Empty response body',
-			);
-		}
-
-		$decoded = json_decode( $body, true );
-
-		// Handle invalid JSON
-		if ( json_last_error() !== JSON_ERROR_NONE ) {
-			return array(
-				'success' => false,
-				'error'   => 'Invalid JSON response',
-			);
-		}
-
-		return $decoded;
-	}
-
-
-
-	public function on_plugin_deactivate(){
-		if( !$this->is_usage_allowed() ) return;
-		$this->usage_data_http_request( array(
-			'active' => 0
-		) );
-		update_option( 'xoo_plugin_deactivated_'.$this->helper->slug, 'yes' );
-	}
 
 	public function export_settings(){
 
