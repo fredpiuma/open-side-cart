@@ -4,6 +4,7 @@
 
 - Add Brazilian Portuguese (pt_BR) translation, bundled with the plugin.
 - Add the quick view "Update" string to the translation template (.pot).
+- Installation instructions in the README; ready-to-install zip attached to each GitHub release.
 
 ## 1.0.1 — 2026-09-30
 

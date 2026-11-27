@@ -6,6 +6,32 @@ unlocked and no license activation, remote updater or telemetry.
 It is a fork of Woocommerce Side Cart Premium 4.9.1 by XootiX, redistributed under
 the GPL. See [CREDITS.md](CREDITS.md) for details. Not affiliated with XootiX.
 
+## Installation
+
+**[Download the plugin (latest release zip)](https://github.com/fredpiuma/open-side-cart/releases/latest/download/open-side-cart.zip)**
+
+This zip contains only the plugin files. Don't install from GitHub's "Source code (zip)": it includes development files and the folder gets the wrong name.
+
+### From the WordPress dashboard
+
+1. Download the zip from the link above.
+2. Go to **Plugins → Add New → Upload Plugin**, choose the file and click **Install Now**.
+3. Activate **Open Side Cart for WooCommerce** and open the **Side Cart** menu to configure.
+
+To update, upload the zip of the new version the same way and confirm replacing the installed version.
+
+### With WP-CLI
+
+```bash
+wp plugin install https://github.com/fredpiuma/open-side-cart/releases/latest/download/open-side-cart.zip --force --activate
+```
+
+The same command installs and updates: `--force` replaces the installed version with the latest one, since the plugin has no automatic updates from the dashboard.
+
+Requires WordPress 6.5+ (uses the `Requires Plugins` header) and WooCommerce.
+
+See [CHANGELOG.md](CHANGELOG.md) for what changed in each version.
+
 ## Features
 
 - Slide-out cart drawer, floating basket and cart shortcode
@@ -30,17 +56,6 @@ To add a language or adjust a string on your site, use Loco Translate. Keep the
 file in its "Custom" or "System" location so updates don't overwrite it; those
 locations take precedence over the files bundled with the plugin. Contributions of
 new languages are welcome as pull requests.
-
-## Requirements
-
-- WordPress 6.5+ (uses the `Requires Plugins` header)
-- WooCommerce
-
-## Installation
-
-1. Download a release zip (or run `git archive --format=zip --prefix=open-side-cart/ -o open-side-cart.zip HEAD`).
-2. In WordPress, go to *Plugins → Add New → Upload Plugin* and upload the zip.
-3. Activate it and open the **Side Cart** menu to configure.
 
 ## Coming from the XootiX plugin
 
