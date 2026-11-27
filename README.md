@@ -1,72 +1,86 @@
 # Open Side Cart for WooCommerce
 
-A free and open source side cart (drawer) for WooCommerce, with every feature
-unlocked and no license activation, remote updater or telemetry.
+Um carrinho lateral (drawer) livre e de código aberto para WooCommerce, com todos os
+recursos liberados e sem ativação de licença, atualizador remoto ou telemetria.
 
-It is a fork of Woocommerce Side Cart Premium 4.9.1 by XootiX, redistributed under
-the GPL. See [CREDITS.md](CREDITS.md) for details. Not affiliated with XootiX.
+É um fork do Woocommerce Side Cart Premium 4.9.1, da XootiX, redistribuído sob a
+GPL. Veja os detalhes em [CREDITS.md](CREDITS.md). Sem vínculo com a XootiX.
 
-## Installation
+## Instalação
 
-**[Download the plugin (latest release zip)](https://github.com/fredpiuma/open-side-cart/releases/latest/download/open-side-cart.zip)**
+**[Baixar o plugin (zip da última versão)](https://github.com/fredpiuma/open-side-cart/releases/latest/download/open-side-cart.zip)**
 
-This zip contains only the plugin files. Don't install from GitHub's "Source code (zip)": it includes development files and the folder gets the wrong name.
+Esse zip tem só os arquivos do plugin. Não use o "Source code (zip)" do GitHub para instalar: ele traz arquivos de desenvolvimento e a pasta fica com o nome errado.
 
-### From the WordPress dashboard
+### Pelo painel do WordPress
 
-1. Download the zip from the link above.
-2. Go to **Plugins → Add New → Upload Plugin**, choose the file and click **Install Now**.
-3. Activate **Open Side Cart for WooCommerce** and open the **Side Cart** menu to configure.
+1. Baixe o zip pelo link acima.
+2. Em **Plugins → Adicionar novo → Enviar plugin**, escolha o arquivo e clique em **Instalar agora**.
+3. Ative o **Open Side Cart for WooCommerce** e abra o menu **Side Cart** para configurar.
 
-To update, upload the zip of the new version the same way and confirm replacing the installed version.
+Para atualizar, envie o zip da versão nova da mesma forma e confirme a substituição da versão instalada.
 
-### With WP-CLI
+### Pelo WP-CLI
 
 ```bash
 wp plugin install https://github.com/fredpiuma/open-side-cart/releases/latest/download/open-side-cart.zip --force --activate
 ```
 
-The same command installs and updates: `--force` replaces the installed version with the latest one, since the plugin has no automatic updates from the dashboard.
+O mesmo comando instala e atualiza: o `--force` substitui a versão instalada pela última, já que o plugin não tem atualização automática pelo painel.
 
-Requires WordPress 6.5+ (uses the `Requires Plugins` header) and WooCommerce.
+Requer WordPress 6.5+ (usa o cabeçalho `Requires Plugins`) e WooCommerce.
 
-See [CHANGELOG.md](CHANGELOG.md) for what changed in each version.
+Veja no [CHANGELOG.md](CHANGELOG.md) o que mudou em cada versão.
 
-## Features
+## Recursos
 
-- Slide-out cart drawer, floating basket and cart shortcode
-- Free shipping bar and rewards progress bar (discounts, gifts, checkpoints)
-- Coupon form, shipping calculator and payment buttons in the cart
-- Suggested products, quick view (including variable products) and variation editing in the cart
-- Save for later (with optional integration with the Easy Login plugin)
-- Button themes, header/body/footer layouts and a live preview in the settings
+- Gaveta de carrinho deslizante, cesta flutuante e shortcode de carrinho
+- Barra de frete grátis e barra de progresso de recompensas (descontos, brindes, metas)
+- Formulário de cupom, calculadora de frete e botões de pagamento no carrinho
+- Produtos sugeridos, visualização rápida (inclusive de produtos variáveis) e edição de variações no carrinho
+- Salvar para depois (com integração opcional com o plugin Easy Login)
+- Temas de botão, layouts de cabeçalho/corpo/rodapé e pré-visualização ao vivo nas configurações
 
-## Translations
+## Traduções
 
-The plugin ships with a **Brazilian Portuguese (pt_BR)** translation, loaded
-automatically when the site language is Português do Brasil.
+O plugin vem com a tradução para **português do Brasil (pt_BR)**, carregada
+automaticamente quando o idioma do site é Português do Brasil.
 
-Translation files live in `languages/`:
+Os arquivos de tradução ficam em `languages/`:
 
-- `open-side-cart.pot`: template with every translatable string;
-- `open-side-cart-pt_BR.po`: source of the translation, editable with Poedit or Loco Translate;
-- `open-side-cart-pt_BR.mo` and `open-side-cart-pt_BR.l10n.php`: compiled files that WordPress reads.
+- `open-side-cart.pot`: modelo com todos os textos traduzíveis;
+- `open-side-cart-pt_BR.po`: fonte da tradução, editável no Poedit ou no Loco Translate;
+- `open-side-cart-pt_BR.mo` e `open-side-cart-pt_BR.l10n.php`: arquivos compilados que o WordPress lê.
 
-To add a language or adjust a string on your site, use Loco Translate. Keep the
-file in its "Custom" or "System" location so updates don't overwrite it; those
-locations take precedence over the files bundled with the plugin. Contributions of
-new languages are welcome as pull requests.
+Para acrescentar um idioma ou ajustar um texto no seu site, use o Loco Translate. Mantenha
+o arquivo no local "Custom" ou "System", para que as atualizações não o sobrescrevam; esses
+locais têm prioridade sobre os arquivos que vêm com o plugin. Contribuições de novos
+idiomas são bem-vindas como pull requests.
 
-## Coming from the XootiX plugin
+## Vindo do plugin da XootiX
 
-Option names, hooks, CSS classes and template paths were renamed, so:
+Nomes de opções, hooks, classes CSS e caminhos de templates foram renomeados, então:
 
-- Settings from the free or premium XootiX plugin are **not** imported; configure the fork again.
-- Custom code using `xoo_wsc_*` hooks or `.xoo-wsc-*` classes must be updated to `osc_*` / `.osc-*`.
-- Template overrides live in `your-theme/templates/open-side-cart/`.
+- As configurações do plugin gratuito ou premium da XootiX **não** são importadas; configure o fork de novo.
+- Código personalizado que usa hooks `xoo_wsc_*` ou classes `.xoo-wsc-*` precisa ser atualizado para `osc_*` / `.osc-*`.
+- As sobrescritas de templates ficam em `seu-tema/templates/open-side-cart/`.
 
-The fork can be active at the same time as the official plugins, though running two side carts is not recommended.
+O fork pode ficar ativo junto com os plugins oficiais, mas não é recomendado usar dois carrinhos laterais.
 
-## License
+## Licença
 
 [GPL-2.0-or-later](LICENSE).
+
+---
+
+### Precisa de uma solução sob medida para a sua loja?
+
+Desenvolvo plugins, integrações e melhorias para WordPress e WooCommerce, do checkout ao pós-venda. Me conte o que você precisa e vamos encontrar o melhor caminho para o seu projeto.
+
+**Frederico de Castro** · Senior Web Developer & Software Architect
+
+[![Fale comigo no WhatsApp](https://img.shields.io/badge/Fale_comigo_no_WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5511914636944)
+[![E-mail](https://img.shields.io/badge/E--mail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contato@fredericodecastro.com.br)
+[![Site](https://img.shields.io/badge/Site-1F2937?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.fredericodecastro.com.br/links/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/fredericodecastro/)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/fredericomdecastro)
